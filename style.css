@@ -1,0 +1,42 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  height: 100vh;
+  background-color: bisque;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#mySvg {
+  border: 1px solid gray;
+  width: 500px;
+  height: 500px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  background: black;
+  filter: blur(10px);
+}
+
+.el1,
+.el2,
+.el3 {
+  transform: rotate(0deg);
+  transform-origin: 50% 50%;
+}
+text {
+  fill: black;
+  font-size: 10px;
+}
+line {
+  stroke-linecap: round;
+}
+.start {
+  height: 100vh;
+  width: 100%;
+  position: absolute;
+  z-index: 999;
+}

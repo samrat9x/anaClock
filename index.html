@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Free Web tutorials" />
+    <meta name="keywords" content="HTML CSS JavaScript" />
+    <meta name="author" content="Samrat" />
+    <title>Clock</title>
+    <!--Manual Styles-->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Favicon-->
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+
+    <!-- Google Font (Poppins) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- font awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+      integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <div class="start"></div>
+
+    <svg id="mySvg" viewBox="0 0 100 100">
+      <!--clock numbers-->
+      <text x="45" y="14">12</text>
+      <text x="47" y="94">6</text>
+      <text x="88" y="54">3</text>
+      <text x="6" y="54">9</text>
+      <text x="12" y="34">10</text>
+      <text x="26" y="20">11</text>
+      <text x="83" y="34">2</text>
+      <text x="68" y="18">1</text>
+      <text x="81" y="73">4</text>
+      <text x="66" y="89">5</text>
+      <text x="28" y="89">7</text>
+      <text x="12" y="73">8</text>
+
+      <!--clock hands-->
+      <line
+        class="el1"
+        x1="50"
+        y1="8"
+        x2="50"
+        y2="50"
+        stroke="green"
+        stroke-width="2"
+      ></line>
+      <line
+        class="el2"
+        x1="50"
+        y1="16"
+        x2="50"
+        y2="50"
+        stroke="red"
+        stroke-width="2"
+      ></line>
+      <line
+        class="el3"
+        x1="50"
+        y1="23"
+        x2="50"
+        y2="50"
+        stroke="blue"
+        stroke-width="2"
+      ></line>
+
+      <!--clock shape and center-->
+      <circle cx="50" cy="50" r="46" fill="none" stroke="blue"></circle>
+      <circle cx="50" cy="50" r="0.5" fill="yellow"></circle>
+    </svg>
+
+    <script src="script.js"></script>
+  </body>
+</html>
