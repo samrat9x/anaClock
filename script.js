@@ -1,10 +1,9 @@
 const str = document.querySelector(".start");
 const Svg = document.querySelector("#mySvg");
 str.addEventListener("click", (e) => {
-  str.style.width = "0px";
+  str.style.background = "transparent";
   Svg.style.filter = "blur(0px)";
-  Svg.style.background = "inherit";
-  Svg.style.transition = "all 0.5s";
+  Svg.style.transition = "all 1s";
 });
 
 let beat = new Audio("ticktick.mp3");

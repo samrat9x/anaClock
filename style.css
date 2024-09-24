@@ -6,18 +6,14 @@
 }
 body {
   height: 100vh;
-  background-color: bisque;
+  background:url(raindrop.jpg) no-repeat center center/cover;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 #mySvg {
-  border: 1px solid gray;
   width: 100vw;
-  /*height: 500px;*/
-  /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);*/
-  background: black;
   filter: blur(10px);
   border: none;
 }
@@ -28,10 +24,16 @@ body {
   transform: rotate(0deg);
   transform-origin: 50% 50%;
 }
-text {
-  fill: black;
-  font-size: 10px;
+text{
+  fill: white;
+  font-size: 7px;
 }
+text:nth-child(3n+1) {
+  fill: white;
+  font-size: 12px;
+  position: relative;
+}
+
 line {
   stroke-linecap: round;
 }
@@ -40,4 +42,11 @@ line {
   width: 100%;
   position: absolute;
   z-index: 999;
+  background-color: rgba(0,0,0,0.8);
 }
+
+rect{
+  transform-origin: 50% 50%;
+}
+
+
