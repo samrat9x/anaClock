@@ -27,6 +27,7 @@ let hour = document.querySelector(".el3");
     if (ho > 12) {
       ho = (ho % 12) * 30;
       hour.style.transform = `rotate(${ho}deg)`;
+      ho/=30;
     }
 
     // 'Hour stick' will go 5degree ahead in every 10 minutes
