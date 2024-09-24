@@ -16,7 +16,7 @@ body {
   border: 1px solid gray;
   width: 100vw;
   /*height: 500px;*/
-  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);
+  /*box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.5);*/
   background: black;
   filter: blur(10px);
   border: none;
